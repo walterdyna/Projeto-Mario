@@ -89,6 +89,7 @@ h1,
 p {
   font-weight: 600;
   color: #989d9c;
+    cursor: url(./assets/logo-header.png), auto;
 }
 
 p {
