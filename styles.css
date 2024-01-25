@@ -49,7 +49,10 @@ main {
 }
 
 video {
-  width: 100vw; /* largura */
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top:0;
 }
 
 .mascara {
@@ -120,8 +123,8 @@ p {
   gap: 20px;
   flex-direction: column;
   position: fixed;
-  top: 50px;
-  left: 50px;
+  left: -300px;
+  top: 30%;
   padding: 20px;
   border-radius: 10px;
 }
@@ -142,6 +145,8 @@ textarea {
   padding-left: 5px;
   outline-color: #18d80f;
 }
+
+
 
 
 /* 
