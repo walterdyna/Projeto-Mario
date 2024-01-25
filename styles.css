@@ -114,6 +114,34 @@ p {
   box-shadow: 0 4px 8px rgba(70, 13, 224, 0.5);
 }
 
+.formulario-fale-conosco {
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  outline-color: #18d80f;
+}
+
+textarea {
+  width: 270px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  outline-color: #18d80f;
+}
 
 
 /* 
