@@ -1,8 +1,8 @@
 
 
-const form = document.querySelector(".formulario-fale-conosco")
+//const form = document.querySelector(".formulario-fale-conosco")
 
 
-function cliqueiNoBotao(){
-    alert
+function cliqueiNoBotao() {
+    alert("voce clicou")
 }
