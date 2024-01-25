@@ -113,3 +113,15 @@ p {
   transition: 0.5s ease-in-out;
   box-shadow: 0 4px 8px rgba(70, 13, 224, 0.5);
 }
+
+
+
+/* 
+Inicial
+    top: 30%;
+    left: -300px
+
+Final
+    top: 30%;
+    left: 50%;
+    transform: translateX (-50%); */
