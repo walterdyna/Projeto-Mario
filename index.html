@@ -18,11 +18,11 @@
     <div class="mascara-formulario" onclick="esconderForm()"></div>
 
     <header class="header">
-      <img src="./assets/logo-header.png" alt="Mario-Header" />
-      <a class="linkHeader" href="home">Home</a>
-      <a class="linkHeader" href="empresa">Empresa</a>
-      <a class="linkHeader" href="clientes">Clientes</a>
-      <a class="linkHeader" href="faleConosco">Fale Conosco</a>
+      <a href="./index.html"><img src="./assets/logo-header.png" alt="Mario-Header" /></a>
+      <a class="linkHeader" href="./index.html">Home</a>
+      <a class="linkHeader" href="#empresa">Empresa</a>
+      <a class="linkHeader" href="#clientes">Clientes</a>
+      <a class="linkHeader" onclick="mostarForm()">Fale Conosco</a>
       <a class="linkHeader" href="https://jogo-mario-pula-cano.netlify.app/"
         >Jogo do Mario</a
       >
@@ -83,9 +83,50 @@
       <input placeholder="Nome Completo:" type="text" name="nome" />
       <input placeholder="Telefone:" type="tel" name="telefone" />
       <input placeholder="E-mail" type="email" name="email" />
-      <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
-      <button type="submit" class="botão-entre-em-contato" onclick="">Pedir Orçamento</button>
+      <textarea
+        placeholder="Digite seu problema aqui..."
+        name="duvida"
+      ></textarea>
+      <button type="submit" class="botão-entre-em-contato" onclick="">
+        Pedir Orçamento
+      </button>
     </form>
+
+    <div class="empresa">
+      <h2 id="empresa">Empresa</h2>
+      <br />
+      <p>
+        Somos uma empresa apaixonada por tecnologia, e nossa jornada começou
+        oficialmente em 2023, mas a semente desse projeto foi plantada muito
+        antes, lá em 2010. No início, conquistávamos nossos clientes
+        principalmente por meio de indicações, levando nossos serviços
+        diretamente até eles.
+        <br /> <br />
+        Atualmente, temos a honra de atender clientes renomados, como Caranguejo
+        do Assis e Açaí e Cia, ambos em Vila Velha, além de colaborar com o
+        Grupo Conectivass, uma referência no setor de saúde.
+        <br /> <br />
+        Nossa trajetória é marcada pelo compromisso em proporcionar soluções
+        tecnológicas de excelência, e cada parceria é uma oportunidade de
+        crescimento mútuo.
+        <br /> <br />
+        Estamos ansiosos para continuar inovando e contribuindo para o sucesso
+        de nossos parceiros.
+      </p>
+    </div>
+
+    <div class="parceria">
+      <h1 id="clientes">Clientes</h1>
+      <p class="agrdecimento">Agradeço às empresas pela confiança e aprendizado. </p>
+      <br><br><br>
+    </div>
+
+    <div class="img-clientes">
+      <a href="https://caranguejodoassis.com.br/"><img class="caranguejo" src="./assets/caranguejo.png" alt="caranguejo"></a>
+      <a href="https://www.instagram.com/acaieciadistribuidoravv/"><img class="acai" src="./assets/Acai e cia.png" alt="acai-e-cia"></a>
+      <a href="https://www.conectivass.com.br/"><img class="conectiva" src="./assets/conectiva.png" alt="conectiva"></a>
+    </div>
+
   </body>
 
   <script src="./scripts.js"></script>

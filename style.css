@@ -52,7 +52,7 @@ video {
   min-height: 100%;
   min-width: 100%;
   position: fixed;
-  top:0;
+  top: 0;
 }
 
 .mascara {
@@ -104,10 +104,12 @@ p {
   color: #c51111;
   font-size: 20px;
   transition: 0.5s ease-in-out;
+  text-decoration: none;
 }
 
 .header img {
   height: 60px;
+  text-decoration: none;
 }
 
 .botão-entre-em-contato:hover {
@@ -154,16 +156,79 @@ textarea {
   width: 100vw;
   height: 100vh;
   background: linear-gradient(
-      109deg,
-      rgba(10, 12, 16, 0.99) 15%,
-      rgba(10, 12, 16, 0.7) 50%,
-      rgba(10, 12, 16, 0.99) 85%
-    ); 
-    transition: visiblity 1s ease-in-out;
-  }
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+  transition: visiblity 1s ease-in-out;
+}
 
+.empresa {
+  font-weight: 600;
+  color: #989d9c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  padding: 200px;
 
+}
 
+.clientes {
+  font-weight: 600;
+  color: #989d9c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  padding: 200px;
+}
+
+.parceria {
+  font-weight: 600;
+  color: #989d9c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 100px;
+}
+
+.clientes{
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+
+.agrdecimento{
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.img-clientes {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  margin-top: -150px;
+  text-align: center;
+  display: flex;
+
+  align-items: center;
+  
+  justify-content: center;
+}
+
+.acai {
+  width: 300px;
+}
+
+.conectiva {
+  width: 300px;
+}
+
+.caranguejo {
+  width: 300px;
+}
 
 /* 
 Inicial
@@ -173,4 +238,54 @@ Inicial
 Final
     top: 30%;
     left: 50%;
-    transform: translateX (-50%); */
+    transform: translateX (-50%); 
+    ---------------------------------------------------------------
+    RESPONSIVIDADE
+    
+    SEMPRE COM MEDIA QUERY
+    max --> valor menor que Npx, aplica o css do media () manor que o valor informado
+    min --> valor maior que Npx, aplica o css do media () menor que o valor informado
+
+    */
+
+@media (max-width: 1100) {
+  h1 {
+    display: none;
+  }
+
+  p {
+    display: none;
+  }
+
+  .caixa-mae {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .caixa-principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .imagem-mario-luigi{
+    width: 80vw;
+    height: auto;
+  }
+  .header {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header img {
+    display: none;
+  }
+
+  .header a {
+    font-size: 20px;
+  }
+
+
+}
