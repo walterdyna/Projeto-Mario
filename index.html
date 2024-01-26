@@ -15,7 +15,6 @@
     <title>Irmãos Bros</title>
   </head>
   <body>
-
     <div class="mascara-formulario" onclick="esconderForm()"></div>
 
     <header class="header">
@@ -53,7 +52,6 @@
           <button class="botão-entre-em-contato" onclick="mostarForm()">
             Entre em Contato
           </button>
-
         </section>
 
         <div>
@@ -76,12 +74,17 @@
       <img class="link-whatsapp" src="./assets/whatsapp.png" alt="Whatsapp" />
     </a>
 
-    <form class="formulario-fale-conosco">
-      <input placeholder="Nome Completo:" />
-      <input placeholder="Telefone:" />
-      <input placeholder="E-mail" />
-      <textarea placeholder="Digite seu problema aqui..."></textarea>
-      <button class="botão-entre-em-contato" onclick="">Pedir Orçamento</button>
+    <form
+      class="formulario-fale-conosco"
+      action="https://formcarry.com/s/3hXtke4QqOt"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input placeholder="Nome Completo:" type="text" name="nome" />
+      <input placeholder="Telefone:" type="tel" name="telefone" />
+      <input placeholder="E-mail" type="email" name="email" />
+      <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+      <button type="submit" class="botão-entre-em-contato" onclick="">Pedir Orçamento</button>
     </form>
   </body>
 
